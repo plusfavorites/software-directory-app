@@ -1,0 +1,38 @@
+{
+  "name": "software-directory-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "studio": "next dev ./studio"
+  },
+  "dependencies": {
+    "@portabletext/react": "^3.1.0",
+    "@portabletext/types": "^2.0.1",
+    "@sanity/vision": "^3.1.0",
+    "classnames": "^2.5.1",
+    "groq": "^3.37.2",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-slot": "^1.0.2",
+    "lucide-react": "^0.378.0",
+    "next": "canary",
+    "next-sanity": "^9.1.0",
+    "next-seo": "^6.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sanity": "^3.57.1",
+    "shadcn-ui": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.4.5"
+  }
+}
