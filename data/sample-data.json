@@ -1,0 +1,136 @@
+{
+  "categories": [
+    {
+      "_id": "cat-browsers",
+      "name": "Browsers",
+      "slug": "browsers",
+      "icon": "Globe",
+      "description": "Fast and secure web browsers."
+    },
+    {
+      "_id": "cat-multimedia",
+      "name": "Multimedia",
+      "slug": "multimedia",
+      "icon": "Play",
+      "description": "Audio and video creation utilities."
+    }
+  ],
+  "apps": [
+    {
+      "_id": "app-1",
+      "title": "Aurora Browser",
+      "slug": "aurora-browser",
+      "version": "12.4.1",
+      "os": ["Windows", "macOS"],
+      "developer": "Aurora Labs",
+      "categoryId": "cat-browsers",
+      "description": "Aurora Browser is a privacy-first, Chromium-based browser with built-in tracker blocking, workspace profiles, and lightning-fast performance.",
+      "shortDescription": "Privacy-first browser with tracker blocking and workspace profiles.",
+      "screenshots": [
+        {
+          "url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800",
+          "alt": "Aurora Browser interface"
+        }
+      ],
+      "downloadLinks": [
+        { "name": "Primary CDN", "url": "https://example.com/aurora.exe" },
+        { "name": "Mirror EU", "url": "https://example.com/aurora-eu.exe" }
+      ],
+      "releaseDate": "2025-01-15",
+      "heroImage": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=1200",
+      "downloads": 1280000
+    },
+    {
+      "_id": "app-2",
+      "title": "Pulse Studio",
+      "slug": "pulse-studio",
+      "version": "5.2.0",
+      "os": ["Windows"],
+      "developer": "Pulse Labs",
+      "categoryId": "cat-multimedia",
+      "description": "Pulse Studio delivers pro-level timeline editing, AI-powered color grading, and instant social exports in a single lightweight suite.",
+      "shortDescription": "Pro-level video editor with AI color grading and fast exports.",
+      "screenshots": [
+        {
+          "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
+          "alt": "Pulse Studio editing timeline"
+        }
+      ],
+      "downloadLinks": [
+        { "name": "Primary CDN", "url": "https://example.com/pulse.exe" },
+        { "name": "Mirror Asia", "url": "https://example.com/pulse-asia.exe" }
+      ],
+      "releaseDate": "2024-11-05",
+      "heroImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200",
+      "downloads": 860000
+    },
+    {
+      "_id": "app-3",
+      "title": "SoundForge Lite",
+      "slug": "soundforge-lite",
+      "version": "3.9.2",
+      "os": ["Windows", "Linux"],
+      "developer": "SoundForge",
+      "categoryId": "cat-multimedia",
+      "description": "SoundForge Lite is the go-to toolkit for podcasters and streamers. Clean up vocals, remove noise, and publish mixes with one-click mastering.",
+      "shortDescription": "Lightweight audio editor with one-click mastering presets.",
+      "screenshots": [
+        {
+          "url": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800",
+          "alt": "SoundForge Lite audio editor"
+        }
+      ],
+      "downloadLinks": [
+        { "name": "Primary CDN", "url": "https://example.com/soundforge.exe" },
+        { "name": "Mirror US", "url": "https://example.com/soundforge-us.exe" }
+      ],
+      "releaseDate": "2024-09-19",
+      "heroImage": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200",
+      "downloads": 540000
+    }
+  ],
+  "posts": [
+    {
+      "_id": "post-1",
+      "title": "5 Essential Browser Privacy Tweaks",
+      "slug": "essential-browser-privacy-tweaks",
+      "excerpt": "Lock down fingerprinting, tame cookies, and browse faster with these privacy essentials.",
+      "coverImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200",
+      "body": [
+        {
+          "_type": "block",
+          "style": "normal",
+          "children": [
+            {
+              "_type": "span",
+              "text": "Privacy settings are scattered across tabs. We break down the high-impact ones you should flip immediately."
+            }
+          ]
+        }
+      ],
+      "tags": ["Privacy", "Browsers"],
+      "publishedAt": "2025-02-01"
+    },
+    {
+      "_id": "post-2",
+      "title": "The Best Free Video Editors in 2025",
+      "slug": "best-free-video-editors-2025",
+      "excerpt": "We benchmarked rendering speeds, AI helpers, and codec support so you don't have to.",
+      "coverImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200",
+      "body": [
+        {
+          "_type": "block",
+          "style": "normal",
+          "children": [
+            {
+              "_type": "span",
+              "text": "Free editors have never looked better. Pulse Studio leads with AI grading, while Resolve still wins on flexibility."
+            }
+          ]
+        }
+      ],
+      "tags": ["Video", "Productivity"],
+      "publishedAt": "2025-01-10"
+    }
+  ]
+}

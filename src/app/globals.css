@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background-color: #ffffff;
+}
+
+body {
+  @apply min-h-screen bg-white font-sans text-slate-900 antialiased;
+}
+
+a {
+  @apply text-brand hover:text-brand/80 transition-colors;
+}
+
+.prose p {
+  @apply leading-relaxed text-slate-700;
+}
+
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply mt-8 font-semibold text-slate-900;
+}
