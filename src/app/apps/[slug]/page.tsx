@@ -10,6 +10,8 @@ import { DownloadLinks } from "@/components/download-links";
 import { Badge } from "@/components/ui/badge";
 import { RelatedApps } from "@/components/related-apps";
 
+export const revalidate = 120;
+
 type Props = {
   params: Promise<{ slug: string }>;
 };

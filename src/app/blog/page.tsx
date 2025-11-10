@@ -3,6 +3,8 @@ import { getPosts } from "@/lib/sanity";
 import { BlogCard } from "@/components/blog-card";
 import { SectionHeading } from "@/components/section-heading";
 
+export const revalidate = 120;
+
 export const metadata: Metadata = {
   title: "Blog",
   description:

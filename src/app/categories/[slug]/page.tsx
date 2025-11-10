@@ -10,6 +10,8 @@ import { AppCard } from "@/components/app-card";
 import { SectionHeading } from "@/components/section-heading";
 import { buildMetadata } from "@/lib/seo";
 
+export const revalidate = 120;
+
 type Props = {
   params: Promise<{ slug: string }>;
 };

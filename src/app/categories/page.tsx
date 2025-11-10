@@ -4,6 +4,8 @@ import { getCategories, getApps } from "@/lib/sanity";
 import { CategoryCard } from "@/components/category-card";
 import { SectionHeading } from "@/components/section-heading";
 
+export const revalidate = 120;
+
 export const metadata: Metadata = {
   title: "Categories",
   description: "Filter FileWave downloads by platform and use case.",

@@ -8,6 +8,8 @@ import { buildMetadata } from "@/lib/seo";
 import { RichText } from "@/components/rich-text";
 import { Badge } from "@/components/ui/badge";
 
+export const revalidate = 120;
+
 type Props = {
   params: Promise<{ slug: string }>;
 };

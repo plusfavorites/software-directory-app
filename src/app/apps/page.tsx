@@ -3,6 +3,8 @@ import { getApps } from "@/lib/sanity";
 import { AppCard } from "@/components/app-card";
 import { SectionHeading } from "@/components/section-heading";
 
+export const revalidate = 120;
+
 export const metadata: Metadata = {
   title: "All software downloads",
   description:
