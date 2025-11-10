@@ -56,7 +56,7 @@ export default async function BlogPostPage(props: Props) {
           </span>
           <span className="inline-flex items-center gap-2">
             <Tag className="h-4 w-4" />
-            {post.tags.join(", ")}
+            {post.tags?.length ? post.tags.join(", ") : "General"}
           </span>
         </div>
       </header>
