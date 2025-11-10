@@ -70,7 +70,7 @@ export default async function AppDetailPage(props: Props) {
 
           <div className="grid gap-4 rounded-3xl border border-border bg-white p-6 md:grid-cols-2">
             <InfoRow icon={<Monitor className="h-5 w-5" />} label="Platforms">
-              {app.os.join(", ")}
+              {app.os?.length ? app.os.join(", ") : "All platforms"}
             </InfoRow>
             <InfoRow icon={<User className="h-5 w-5" />} label="Developer">
               {app.developer}

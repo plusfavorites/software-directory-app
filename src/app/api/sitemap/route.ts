@@ -1,9 +1,5 @@
 import { getApps, getCategories, getPosts } from "@/lib/sanity";
-
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  process.env.VERCEL_PROJECT_PRODUCTION_URL ||
-  "https://filewave.vercel.app";
+import { siteUrl } from "@/lib/site-url";
 
 export async function GET() {
   const [apps, categories, posts] = await Promise.all([

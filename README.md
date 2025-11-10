@@ -11,7 +11,8 @@ Complete Next.js 15 + Sanity build that mirrors the FileHippo UX:
 
 ### 1. Environment
 
-`.env.local` is checked in with your live project details:
+`.env.local` is checked in with your live project details (ensure
+`NEXT_PUBLIC_SITE_URL` includes `https://` for production deployments):
 
 ```
 NEXT_PUBLIC_SITE_URL=http://localhost:3000

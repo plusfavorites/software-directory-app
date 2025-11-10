@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
-
-const baseUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  process.env.VERCEL_PROJECT_PRODUCTION_URL ||
-  "https://software-directory-app.vercel.app";
+import { buildAbsoluteUrl } from "@/lib/site-url";
 
 type SeoInput = {
   title: string;
@@ -18,7 +14,7 @@ export function buildMetadata({
   path = "",
   images = [],
 }: SeoInput): Metadata {
-  const url = new URL(path, baseUrl).toString();
+  const url = buildAbsoluteUrl(path);
   return {
     title,
     description,

@@ -51,7 +51,7 @@ export function AppCard({ app, showCategory = false }: Props) {
         <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500">
           <span className="inline-flex items-center gap-1">
             <Monitor className="h-4 w-4" />
-            {app.os.join(", ")}
+            {app.os?.length ? app.os.join(", ") : "All platforms"}
           </span>
           {app.downloads ? (
             <span className="inline-flex items-center gap-1 text-slate-700">
