@@ -8,5 +8,5 @@
     "skipLibCheck": true,
     "jsx": "react-jsx"
   },
-  "include": ["sanity.config.ts"]
+  "include": ["sanity.config.ts", "sanity.cli.ts"]
 }
