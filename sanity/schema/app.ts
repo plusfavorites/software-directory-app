@@ -1,4 +1,4 @@
-import { defineField, defineType } from "sanity";
+import { defineArrayMember, defineField, defineType } from "sanity";
 import { DownloadIcon } from "@sanity/icons";
 
 export const app = defineType({
@@ -61,15 +61,16 @@ export const app = defineType({
       name: "screenshots",
       type: "array",
       of: [
-        defineField({
+        defineArrayMember({
+          name: "screenshot",
           type: "image",
           options: { hotspot: true },
           fields: [
-            {
+            defineField({
               name: "alt",
               type: "string",
               title: "Alt text",
-            },
+            }),
           ],
         }),
       ],
@@ -79,17 +80,22 @@ export const app = defineType({
       type: "array",
       validation: (rule) => rule.min(1),
       of: [
-        {
+        defineArrayMember({
+          name: "downloadLink",
           type: "object",
           fields: [
-            { name: "name", type: "string", validation: (rule) => rule.required() },
-            {
+            defineField({
+              name: "name",
+              type: "string",
+              validation: (rule) => rule.required(),
+            }),
+            defineField({
               name: "url",
               type: "url",
               validation: (rule) => rule.required(),
-            },
+            }),
           ],
-        },
+        }),
       ],
     }),
     defineField({
