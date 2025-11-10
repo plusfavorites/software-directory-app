@@ -1,66 +1,73 @@
-## FileWave – FileHippo-style directory
+## FileWave - FileHippo-style directory
 
-Complete Next.js 15 + Sanity starter that mirrors the FileHippo UX:
+Complete Next.js 15 + Sanity build that mirrors the FileHippo UX:
 
 - App Router + TypeScript
 - Tailwind CSS + ShadCN components
 - Sanity Studio in `/studio`
 - Dynamic routes for apps, categories, blog
-- Search (client-side Fuse.js) + related apps
+- Search (Fuse.js) + related apps
 - Metadata API + XML sitemap + RSS feed
 
 ### 1. Environment
 
-```bash
-cp .env.example .env.local
-# fill SANITY_* values + NEXT_PUBLIC_SITE_URL
+`.env.local` is checked in with your live project details:
+
 ```
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+SANITY_PROJECT_ID=tq2oqx4a
+SANITY_DATASET=production
+SANITY_API_VERSION=2025-03-01
+```
+
+Change `NEXT_PUBLIC_SITE_URL` for deployment and set `SANITY_WRITE_TOKEN`
+before seeding content.
 
 ### 2. Run everything
 
 ```bash
 npm install
+npm install --prefix studio   # install Studio deps once
 npm run dev          # Next.js app
-npm run studio:dev   # optional Sanity Studio (http://localhost:3333)
+npm run studio:dev   # or: cd studio && npm run dev (Studio at http://localhost:3333)
 ```
 
 ### 3. Seed Sanity (optional)
 
-Sample data (3 apps, 2 categories, 2 posts) lives in `sanity/seed/sample-data.ts`.
-After authenticating with Sanity:
+Sample docs (3 apps, 2 categories, 2 posts) live in
+`sanity/seed/sample-data.mjs`. After authenticating with Sanity:
 
 ```bash
 npm run studio:dev
-# in a second terminal (requires SANITY_WRITE_TOKEN)
-node scripts/seed.mjs
+SANITY_WRITE_TOKEN=*** node scripts/seed.mjs
 ```
 
-You can also `import { seedDocuments }` manually; the frontend automatically falls back
-to the same sample data when the CMS is not configured yet.
+The frontend now relies entirely on the connected Sanity project, so seeding is
+the recommended way to load starter content.
 
 ### Project structure
 
 ```
 src/app           # App Router routes + API endpoints
 src/components    # UI, cards, layout, search drawer
-src/lib           # Sanity client, GROQ queries, sample data, SEO helpers
+src/lib           # Sanity client, GROQ queries, SEO helpers
 sanity/schema     # App/category/post schema definitions
-studio            # Standalone Sanity Studio config (npx sanity dev --cwd studio)
+studio            # Sanity Studio config (npx sanity dev --cwd studio)
 ```
 
 ### Useful scripts
 
-| Script           | Description                                   |
-| ---------------- | --------------------------------------------- |
-| `npm run dev`    | Next.js development server                    |
-| `npm run build`  | Production build (Next.js + route handlers)   |
-| `npm run lint`   | ESLint                                        |
-| `npm run studio:dev` | Sanity Studio locally                    |
-| `npm run studio:deploy` | Deploy Studio to Sanity hosting       |
+| Script                | Description                                 |
+| -------------------- | ------------------------------------------- |
+| `npm run dev`        | Next.js development server                  |
+| `npm run build`      | Production build                            |
+| `npm run lint`       | ESLint                                      |
+| `npm run studio:dev` | Sanity Studio locally                       |
+| `npm run studio:deploy` | Deploy Studio to Sanity managed hosting |
 
 ### Deployment
 
-Deploy the Next.js app on Vercel (or any Node 18+ host) and connect the Sanity
-project via environment variables. The `/api/sitemap` and `/api/rss` routes
-generate metadata feeds automatically at request time. ShadCN UI components are
-co-located in `src/components/ui`.
+Deploy the Next.js app on Vercel (or any Node 18+ host) and keep the Sanity
+environment variables in sync. The `/api/sitemap` and `/api/rss` routes
+generate SEO feeds automatically; ShadCN UI components live in
+`src/components/ui`.

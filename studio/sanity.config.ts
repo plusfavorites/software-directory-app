@@ -7,7 +7,7 @@ import { projectId, dataset, apiVersion } from "../sanity/env";
 export default defineConfig({
   name: "filewave-studio",
   title: "FileWave Studio",
-  projectId: projectId || "your-project-id",
+  projectId: projectId || "tq2oqx4a",
   dataset: dataset || "production",
   schema: {
     types: schemaTypes,
