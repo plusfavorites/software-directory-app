@@ -19,7 +19,7 @@ export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>FileWave blog</title>
+    <title>Ridnt blog</title>
     <link>${siteUrl}/blog</link>
     <description>Trusted download editorials, powered by Sanity.</description>
     ${items}

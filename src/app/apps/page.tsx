@@ -8,7 +8,7 @@ export const revalidate = 120;
 export const metadata: Metadata = {
   title: "All software downloads",
   description:
-    "Browse every curated desktop app in the FileWave catalog with full changelogs and mirror links.",
+    "Browse every curated desktop app in the Ridnt catalog with full changelogs and mirror links.",
 };
 
 export default async function AppsPage() {

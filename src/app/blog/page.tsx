@@ -17,7 +17,7 @@ export default async function BlogPage() {
   return (
     <div className="space-y-8">
       <SectionHeading
-        title="FileWave Journal"
+        title="Ridnt Journal"
         description="Stories about the software we spotlight."
       />
       <div className="grid gap-6 md:grid-cols-2">

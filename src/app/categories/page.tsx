@@ -8,7 +8,7 @@ export const revalidate = 120;
 
 export const metadata: Metadata = {
   title: "Categories",
-  description: "Filter FileWave downloads by platform and use case.",
+  description: "Filter Ridnt downloads by platform and use case.",
 };
 
 export default async function CategoriesPage() {

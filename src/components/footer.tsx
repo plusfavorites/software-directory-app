@@ -13,7 +13,7 @@ export function Footer() {
     <footer className="border-t border-border bg-white">
       <div className="container flex flex-col gap-4 py-10 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
         <p>
-          Copyright {new Date().getFullYear()} FileWave. Community mirror
+          Copyright {new Date().getFullYear()} Ridnt. Community mirror
           links, no bundled installers.
         </p>
         <nav className="flex flex-wrap gap-x-6 gap-y-2">

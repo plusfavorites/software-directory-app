@@ -1,4 +1,4 @@
-## FileWave - FileHippo-style directory
+## Ridnt - FileHippo-style directory
 
 Complete Next.js 15 + Sanity build that mirrors the FileHippo UX:
 

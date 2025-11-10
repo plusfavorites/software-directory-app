@@ -16,7 +16,7 @@ export async function Header() {
             FH
           </span>
           <div className="hidden flex-col text-left leading-tight sm:flex">
-            <span>FileWave</span>
+            <span>Ridnt</span>
             <span className="text-xs font-normal text-slate-500">
               Software directory
             </span>

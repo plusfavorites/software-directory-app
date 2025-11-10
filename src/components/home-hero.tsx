@@ -11,10 +11,10 @@ export function HomeHero() {
           <ShieldCheck className="h-4 w-4" />
         </p>
         <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
-          Download trusted desktop apps, just like FileHippo—without the noise.
+          Download trusted desktop apps, without the noise.
         </h1>
         <p className="text-lg text-slate-200">
-          FileWave indexes hand-reviewed releases with clean changelogs,
+          Ridnt indexes hand-reviewed releases with clean changelogs,
           related alternatives, and global mirror links so your download is
           always fast and verified.
         </p>

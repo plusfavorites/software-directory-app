@@ -13,15 +13,14 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "FileWave - FileHippo-style software directory",
-    template: "%s | FileWave",
+    default: "Ridnt - software directory",
+    template: "%s | Ridnt",
   },
   description:
-    "Discover trusted desktop apps, curated mirror links, and daily software news powered by Sanity + Next.js.",
+    "Discover trusted desktop apps, curated mirror links, and daily software news",
   keywords: [
-    "FileHippo alternative",
+    "Ridnt",
     "software download directory",
-    "Next.js Sanity starter",
   ],
 };
 
