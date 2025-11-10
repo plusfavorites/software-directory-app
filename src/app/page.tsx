@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 export const revalidate = 120;
 
 
+
 export default async function HomePage() {
   const [apps, topDownloads, categories, posts] = await Promise.all([
     getApps(),
