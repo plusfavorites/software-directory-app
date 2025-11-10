@@ -7,6 +7,7 @@ import { CategoryCard } from "@/components/category-card";
 import { BlogCard } from "@/components/blog-card";
 import { Button } from "@/components/ui/button";
 
+
 export const revalidate = 120;
 
 
